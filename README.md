@@ -7,9 +7,6 @@ variables (on Windows prepended to the script as `export` lines, because environ
 not cross `wsl.exe`) and returns the captured output. On Windows it expects the default `/mnt/<drive>`
 automount root and a temp directory on a drive letter.
 
-**Internal ISW project. Do not publish.** The runtime plugins are moved out of the runtime project,
-so that the public LABraDT release ships the core and the plugin interfaces only.
-
 **Not sandboxed.** A Bash service runs as an ordinary shell process with the rights of the runtime's
 user; only register scripts you trust.
 
